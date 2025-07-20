@@ -56,10 +56,14 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Text('ليس لديك حساب؟'),
-                SizedBox(width: 5),
-                Text('إنشاء حساب', style: TextStyle(fontWeight: FontWeight.bold)),
+              children: [
+                const Text('ليس لديك حساب؟'),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/signup');
+                  },
+                  child: const Text('إنشاء حساب', style: TextStyle(fontWeight: FontWeight.bold)),
+                ),
               ],
             )
           ],
