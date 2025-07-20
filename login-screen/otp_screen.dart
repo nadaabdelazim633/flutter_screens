@@ -37,8 +37,7 @@ class OTPScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              onPressed: () {
-              },
+              onPressed: () {},
               child: const Text('تأكيد'),
             )
           ],
@@ -47,3 +46,4 @@ class OTPScreen extends StatelessWidget {
     );
   }
 }
+
