@@ -1,4 +1,4 @@
-# 📱 Sign Up Screen - Flutter
+# 📱 Sign Up Screen 
 
 The Sign Up screen is built using Flutter. It allows users to register by entering a phone number, password, and confirming the password. After registration, the user is redirected to the OTP verification screen.
 
