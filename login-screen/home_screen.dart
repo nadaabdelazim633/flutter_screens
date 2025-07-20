@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
-  @override
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
@@ -15,7 +14,7 @@ class HomeScreen extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
-          Image.asset('assets/images/kid.png', height: 250), 
+          Image.asset('assets/images/kid.png', height: 250),
           const Spacer(),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -36,3 +35,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+ 
