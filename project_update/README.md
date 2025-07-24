@@ -1,68 +1,53 @@
-# Flutter Auth & Navigation UI Project
+# Flutter Project 🚀
 
-This is a simple Flutter project that demonstrates basic UI screens for:
+This Flutter project provides a clean and responsive structure for a basic authentication flow and navigation.  
+It includes the following screens:
+-home Screen
+- Login Screen
+- Sign Up Screen
+- OTP Verification Screen
+- Home Screen with a Bottom Navigation Bar
+- Profile Screen
+---
 
-- User Login
-- Sign Up
-- OTP Verification
-- Home screen with a ListView of products
-- Profile screen
-- Bottom Navigation Bar linking Home and Profile
+## 📱 Screens Overview
 
-> 💡 This project focuses on frontend UI only (no real authentication logic is implemented).
+### 1. Home Screen
+- Shows an animated or static welcome screen.
+- Navigates to the Login screen after a delay.
 
-## 📱 Screens Included
+### 2. Login Screen
+- Input fields: Phone Number & Password
+- Button to Login
+- Link to Sign Up
 
-- **Login Screen:** Phone and password fields + button to verify
-- **Sign Up Screen:** Phone and password fields + button to register
-- **OTP Screen:** Field for entering verification code
-- **Home Screen:** Displays a simple `ListView` of dummy products
-- **Profile Screen:** Simple user info placeholder
-- **Bottom Navigation Bar:** Switches between Home and Profile
+### 3. Sign Up Screen
+- Input fields: Phone Number & Password
+- Button to Register
+- Navigates to OTP Screen
 
-## 🗂️ Folder Structure
+### 4. OTP Screen
+- Input fields for a 6-digit code
+- Button to Verify
 
-```
-lib/
-├── main.dart
-└── screens/
-    ├── login_screen.dart
-    ├── signup_screen.dart
-    ├── otp_screen.dart
-    ├── home_screen.dart
-    ├── profile_screen.dart
-    └── main_screen.dart
-```
+### 5. Home Screen
+- Contains a `BottomNavigationBar`
+- Displays a `ListView` of product cards or sample items.
 
-## ▶️ How to Run
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/flutter-auth-ui.git
-   cd flutter-auth-ui
-   ```
-
-2. Get packages:
-   ```bash
-   flutter pub get
-   ```
-
-3. Run the app:
-   ```bash
-   flutter run
-   ```
-
-## 📸 Screenshots
-
-| Login Screen | OTP Screen | Home Screen |
-|--------------|------------|-------------|
-| ![Login](screenshots/login.png) | ![OTP](screenshots/otp.png) | ![Home](screenshots/home.png) |
-
-## 🛠️ Tech Used
-
-- Flutter SDK
-- Dart
+### 6. Profile Screen
+- Simple placeholder for user profile.
 
 ---
 
-> Developed by [Your Name]
+## 🧭 Navigation Flow
+
+- `SplashScreen` → `LoginScreen`
+- `LoginScreen` → `SignUpScreen` or `HomeScreen`
+- `SignUpScreen` → `OtpScreen`
+- `OtpScreen` → `HomeScreen`
+- BottomNavigation inside `HomeScreen` allows switching between:
+  - Home tab
+  - Profile tab
+
+---
+
