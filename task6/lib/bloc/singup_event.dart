@@ -1,4 +1,3 @@
-part of 'signup_bloc.dart';
 
 abstract class SignUpEvent {}
 
