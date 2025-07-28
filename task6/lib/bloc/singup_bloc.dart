@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:meta/meta.dart';
 
 part 'signup_event.dart';
 part 'signup_state.dart';
