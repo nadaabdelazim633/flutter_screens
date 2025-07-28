@@ -1,29 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:iti_project/features/auth/bloc/login_bloc.dart';
-import 'package:iti_project/features/auth/login_screen.dart';
-import 'package:iti_project/bloc_screens/bloc/counter_bloc.dart';
-import 'package:iti_project/utils/app_themes.dart';
+import 'package:iti_project/features/singup/bloc/signup_bloc.dart';
+import 'package:iti_project/features/singup/screens/signup_screen_whith_bloc.dart';
+
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    ///
-    ///
-    ///
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (context) => CounterBloc()),
-        BlocProvider(create: (context) => LoginBloc()),
-      ],
+    return BlocProvider(
+      create: (context) => SignUpBloc(),
       child: MaterialApp(
-        theme: AppThemes.lightTheme,
-
-        // darkTheme: AppThemes.lightTheme,
-        home: LoginScreen(),
+        debugShowCheckedModeBanner: false,
+        title: 'SignUp App',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const SingUpScreenWhithBloc(),
       ),
     );
   }
